@@ -1,0 +1,123 @@
+/* My Porfolio Website */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    width: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgba(2, 18, 63, 0.792);
+}
+
+/* Navigation-bar */
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    box-shadow: 10px 10px 4px  rgba(0, 0, 0, 0.142);
+    align-items: center;   
+}
+
+a{
+ color: white;
+    text-decoration: none;    
+}
+
+a:hover{
+    opacity: 0.3;
+    text-decoration: overline;
+    transition: 2s;
+}
+
+/* Left-nav */
+.Left-nav{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.Left-nav img{
+width: 30px;
+border-radius: 30px;
+height: 30px;
+background-color: rgba(2, 18, 63, 0.792);
+border: inset grey;
+padding: 2px 2px;
+object-fit: contain;
+}
+.Left-nav:hover{
+     transform: scale(1.2);
+    transition: 1s;
+}
+
+
+/* Middle-nav */
+.Middle-nav{
+    display: flex;
+    gap: 20px;
+
+}
+
+/* ham-burger */
+.ham{
+display: flex;
+flex-direction: column;
+gap: 2.5px;
+}
+.ham-burger{
+    display: none;
+}
+.ham-burger{
+    background-color: white;
+    border-radius: 3px;
+    width: 40px;
+    height: 5px;
+}
+
+/* Right-nav */
+.Right-nav{
+    display: flex;
+    gap: 10px;
+}
+.Right-nav button{
+    border: none;
+    color: rgb(177, 4, 33);
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    background-color: rgba(2, 18, 63, 0);
+    box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.142);
+}
+.Right-nav button:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.Right-nav img{
+    object-fit: contain ;
+    width: 30px;
+border-radius: 30px;
+height: 30px;
+background-color: rgba(2, 18, 63, 0);
+ box-shadow: 10px 10px 4px rgba(0, 0, 0, 0.142);
+ align-items: center;
+padding: 8px 8px;
+}
+.Right-nav img:hover{
+     transform: scale(1.2);
+    transition: 1s;
+}
+
+@media screen and (max-width: 900px) {
+.Middle-nav{
+    display: none;
+}
+.Right-nav{
+    display: none;
+}
+.ham-burger{
+    display: block;
+}
+}
