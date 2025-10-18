@@ -326,18 +326,29 @@ gap: 20px;
         
     }
     .web{
-        width: 480px;
-        height: 200px;
-        object-fit: cover;
-        display: block;
-        object-fit: cover;
-        overflow-x: hidden;
-        overflow-y: auto ;
-        display: inline-block;
+width: 100%;
+height: auto;
+display: block;
+padding: 10px;
     }
     .scroll{
-        overflow-x: hidden;
-        overflow-y: auto ;
-        display: inline-block;
-        border: ridge;
+        width: 200px;
+        height: auto;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
+    .scroll-container{
+width: 100%;
+height: 150px;
+overflow-y: auto;
+    }
+    .web:hover{
+        transform: translateY(-50%);
+        transition: transform 3s ease-in-out;
+    }
+.scroll-container::-webkit-scrollbar{
+display: none;
+}
