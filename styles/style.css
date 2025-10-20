@@ -353,7 +353,7 @@ gap: 20px;
          gap: 10px;
          align-items: left;
          text-align: left;
-         padding: 20px;
+         padding: 10px;
     }
     .Features button p{
         color: white;
@@ -375,6 +375,15 @@ gap: 20px;
     .what img{
         width: 40px;
     }
+    @media  (max-width:700px ){
+.Features button{
+    text-wrap: wrap;
+    font-size: 10px;
+    
+}
+    }
+        
+    
 
     /* Projects */
     .Project{
