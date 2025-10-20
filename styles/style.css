@@ -436,8 +436,10 @@ display: block;
         overflow: hidden;
         display: flex;
         flex-direction: column;
-        align-items: center;
+        
+        text-align: left;
         padding: 10px;
+        gap: 10px;
     }
     .scroll-container{
 width: 100%;
@@ -452,3 +454,44 @@ overflow-y: auto;
 .scroll-container::-webkit-scrollbar{
 display: none;
 }
+.like{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  
+    
+    
+}
+.no{
+    display: flex;
+   
+}
+.no p{
+    color: white;
+}
+.no img{
+    width: 15px;
+    object-fit: contain;
+}
+ @media  (max-width:500px ){
+.like{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+ }
+@media  (max-width:330px ){
+    .space{
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+    .Projects button{
+        width: 230px;
+    }
+    .Features button{
+         width: 230px;
+    }
+}
+
+
