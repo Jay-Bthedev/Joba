@@ -462,14 +462,14 @@ display: none;
     
     
 }
-.no{
+.likes{
     display: flex;
    
 }
-.no p{
+.likes p{
     color: white;
 }
-.no img{
+.likes img{
     width: 15px;
     object-fit: contain;
 }
