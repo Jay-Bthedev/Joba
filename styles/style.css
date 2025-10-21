@@ -265,8 +265,15 @@ main{
 @media  (max-width: 900px){
     .intro{
         display: flex;
-        flex-direction: column;
+        flex-direction: column-reverse;
         gap: 100px;
+    }
+    .pic{
+top: px;
+    }
+    .me{
+        position: relative;
+        top: 100px;
     }
     
 }
