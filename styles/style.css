@@ -19,7 +19,10 @@ h1, h2,h3{
 /* Navigation-bar */
 nav{
     display: flex;
-    padding: 20px 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 40px;
+    padding-right: 20px;
     font-family: 'Outfit', sans-serif;
     justify-content: space-between; 
     align-items: center;
@@ -350,6 +353,7 @@ gap: 20px;
     .space{
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
         gap: 20px;
     }
     .Features button{
@@ -408,7 +412,8 @@ gap: 20px;
     .Projects{
        display: flex;
         flex-direction: column;
-        gap: 20px; 
+        justify-content: space-between;
+        gap: 20px;
     }
     .Project p{
         color: #3685B5;
