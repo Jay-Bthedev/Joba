@@ -22,11 +22,17 @@ nav{
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 40px;
-    padding-right: 20px;
+    padding-right: 40px;
     font-family: 'Outfit', sans-serif;
     justify-content: space-between; 
     align-items: center;
     box-shadow: 10px 10px 4px  rgba(0, 0, 0, 0.142);  
+    width: 95%;
+    justify-self: center;
+    position: fixed;
+    background-color: #061826;
+    z-index: 9999;
+   
    
 }
 
@@ -75,7 +81,7 @@ object-fit: contain;
 display: flex;
 flex-direction: column;
 }
-.ham-burger{
+.ham{
     display: none;
 }
 .ham-burger{
@@ -199,14 +205,14 @@ cursor: pointer;
 .Right-nav{
     display: none;
 }
-.ham-burger{
+.ham{
     display: block;
 }
 }
 
 /* main */
 main{
-    padding-top: 100px;
+    padding-top: 200px;
     
     color: white;
     font-family: 'Outfit', sans-serif; 
@@ -278,25 +284,28 @@ main{
   
     .me{
         position: relative;
-        top: 100px;
+        top: 70px;
+
     }
     
 }
 @media (max-width: 320px){
     .me{
-        width: 250px;
+        width: 220px;
         height: 226px;
+     
     }
     .pic{
-        width: 250px;
+        width: 220px;
+
+        
     }
 }
 
 .list{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    width: 50%;
+    gap: 40px;
     padding-top: 100px;
     align-items: center;
 }
@@ -324,6 +333,7 @@ cursor: pointer;
 display: flex;
 flex-direction: row;
 gap: 20px;
+padding-bottom: 10px;
     }
      @media  (max-width: 800px ){
 .list{
@@ -334,9 +344,8 @@ gap: 20px;
 
     @media  (max-width: 600px ){
        .list{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
+        display: block;
+        
        } 
     }
 
@@ -387,7 +396,7 @@ gap: 20px;
     .what{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
     .what img{
         width: 40px;
@@ -413,13 +422,13 @@ gap: 20px;
        display: flex;
         flex-direction: column;
         justify-content: space-between;
-        gap: 20px;
+        gap: 30px;
     }
     .Project p{
         color: #3685B5;
     }
     
-    
+
     .center{
         text-align: center;
     }
@@ -457,8 +466,9 @@ display: block;
     }
     .scroll-container{
 width: 100%;
-height: 150px;
 overflow-y: auto;
+height: 60%;
+align-items: center;
 
     }
     .web:hover{
@@ -495,6 +505,9 @@ display: none;
 
     
 }
+.scroll-container{
+    height: 50px;
+}
 
 
 .Project h3 {
@@ -505,13 +518,16 @@ display: none;
     .space{
         display: flex;
         flex-direction: column;
-        gap: 20px;
+        gap: 30px;
     }
     .Projects button{
         width: 230px;
     }
     .Features button{
          width: 230px;
+    }
+    .scroll-container{
+        height: 60%;
     }
 }
 
@@ -557,8 +573,10 @@ font-weight: 300;
 .yu{
   display: flex;
   justify-content: space-between;
-padding: 0 50px;
-
+padding-top: 10px;
+padding-bottom: 10px;
+padding-right: 40px;
+padding-left: 40px;
 
 
 }
