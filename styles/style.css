@@ -32,7 +32,7 @@ nav{
     position: fixed;
     background-color: #061826;
     z-index: 9999;
-   
+   border-radius: 10px;
    
 }
 
@@ -355,6 +355,8 @@ padding: 80px 50px;
 display: flex;
 flex-direction: column;
 gap: 20px;
+box-shadow: 0 10px   rgba(0, 0, 0, 0.142);
+border-radius: 10px;
     }
     .Features p{
         color: #3685B5;
@@ -417,6 +419,8 @@ gap: 20px;
 display: flex;
 flex-direction: column;
 gap: 20px;    
+box-shadow: 0 10px   rgba(0, 0, 0, 0.142);
+border-radius: 10px;
     }
     .Projects{
        display: flex;
