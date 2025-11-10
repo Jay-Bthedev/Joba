@@ -518,7 +518,7 @@ display: none;
        font-size: 12px; 
     }
  }
-@media  (max-width:330px ){
+@media  (max-width:350px ){
     .space{
         display: flex;
         flex-direction: column;
