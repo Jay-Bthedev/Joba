@@ -110,7 +110,7 @@ flex-direction: column;
      box-shadow: 10px 10px 4px  rgba(0, 0, 0, 0.142);  
     border-radius: 10px;
     width: 150px;
-    z-index: 1000;
+    z-index: 9999;
     height:100vh;
     background-color: #061826;
     padding: 20px 40px;
@@ -518,17 +518,17 @@ display: none;
        font-size: 12px; 
     }
  }
-@media  (max-width:350px ){
+@media  (max-width:380px ){
     .space{
         display: flex;
         flex-direction: column;
         gap: 30px;
     }
     .Projects button{
-        width: 230px;
+        width: 100%;
     }
     .Features button{
-         width: 230px;
+         width: 100%;
     }
     .scroll-container{
         height: 60%;
@@ -590,6 +590,7 @@ padding-left: 40px;
         display: flex;
         flex-direction: row;
         gap: 5px;
+        flex-wrap: wrap;
     }
 }
 
@@ -600,7 +601,253 @@ padding-left: 40px;
     gap: 20px;
   }
 }
+   
+
+
+/* About */
+.About{
+padding: 80px 50px;
+display: flex;
+flex-direction: column;
+gap: 20px;
+box-shadow: 0 10px   rgba(0, 0, 0, 0.142);
+border-radius: 10px;
+    }
+     .About p{
+        color: #3685B5;
+    }
+    .About-des{
+       display: flex;
+       justify-content: space-between;
+       align-items: center;
+      
+    }
+    .About-des p{
+        color: white;
+       width: 90%;
+      
+
+
+
+
+    }
     
 
+.About-img{
+    width: 300px;
+    height: 350px;
+    border-radius: 10px;
+   
+    justify-self: center;
+    
+}
+.About-button{
+align-self: center;
+padding-top: 20px;
+display: flex;
+gap: 20px;
+}
+.About-button button{
+    width: 130px;
+    height: 30px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.CV{
+    background-color: #3685B5;
+    color: white;
+    cursor: pointer;
+}
 
+.About-button button:hover{
+    opacity: 0.5;
+}
+
+
+/* Contact */
+.contact{
+    padding: 80px 50px;
+display: flex;
+flex-direction: column;
+gap: 20px;    
+box-shadow: 0 10px   rgba(0, 0, 0, 0.142);
+border-radius: 10px;
+text-align: center;
+    }
+
+    .contact p{
+        color: #3685B5;
+    }
+
+    
+ .form1{
+    display: flex;
+    gap: 20px;
+   justify-self: center;
+   
+  
+    
+ }  
+ .form1 p{
+    color: white;
+    text-align: left;
+ } 
+ .form2{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+   justify-self: center;
+    
+ }
+ .form2 p{
+    color: white;
+    text-align: center;
+
+ }
+ 
+ .contact-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+ }
+ .form2 button{
+    width: 150px;
+    height: 35px;
+    justify-items: center;
+    
+ }
+ .form2 button:hover{
+    opacity: 0.5;
+ }
+ .actual-form{
+width: 250px;
+height: 40px;
+padding-left: 20px;
+
+
+}
+
+ .actual-form1{
+    width: 550px;
+    height: 60px;
+  padding-left: 20px;
+  padding-bottom: 60px;
+  flex-wrap: wrap;
+  
+ }
+ .rate{
+    display: flex;
+    justify-self: center;
+    gap: 10px;
+    padding-bottom: 10px;
+ }
+ .rate-dl{
+    border-right: ridge;
+    border-left: ridge;
+    padding-left: 20px;
+    padding-right: 20px;
+ }
+
+ /* Media query */
+ @media screen and (max-width: 500px){
+    .About-des{
+        display: block;
+    }
+    .form1{
+display: block;
+
+    }
+    .form2{
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        
+    }
+    .actual-form1{
+        width: 250px;
+        display: flex;
+    }
+    .description{
+        width: 100%;
+        padding-bottom: 20px;
+    }
+    .form-div p{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    
+    }
+    .About-img{
+width: 280px;
+height: 300px;
+
+    }
+    .getin{
+        display: flex;
+        flex-direction: column;
+        justify-self: center;
+        width: 100%;
+    }
+ }
+
+ @media screen and (max-width: 430px){
+   
+    .actual-form{
+        display: flex;
+        flex-direction: column;
+        align-self: center;
+        
+    }
+    .About-img{
+       width: 330px; 
+       object-fit: cover;
+    }
+ }
+  @media screen and (max-width: 800px){
+    .About-des{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+     .About-img{
+        border-radius: 10px;
+        display: flex;
+        justify-self: center;
+     }
+     .About-des p{
+        padding-top: 20px;
+        width: 100%;
+     }
+  }
+  @media screen and (max-width: 380px){
+      .About-img{
+width: 280px;
+height: 300px;
+
+    }
+  }
+
+
+  @media screen and (max-width: 325px){
+  .About-img{
+width: 220px;
+height: 300px;
+
+    }
+    .About-button button{
+        width: 100px;
+    }
+    .actual-form{
+        width: 200px;
+        
+    }
+    .actual-form1{
+       width: 200px; 
+    }
+  }
+
+ 
 
