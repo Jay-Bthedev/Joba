@@ -713,6 +713,13 @@ text-align: center;
     align-items: center;
     gap: 10px;
  }
+ .contact-message a{
+    text-decoration: underline;
+ }
+ .contact-message a:hover{
+    opacity: 0.5;
+    transition: 1s;
+ }
  .form2 button{
     width: 150px;
     height: 35px;
