@@ -281,6 +281,7 @@ main{
   bottom: 100px; 
    opacity: 0;
   transition: opacity 1s ease-in-out;
+  object-fit: cover;
 }
 @media  (max-width: 900px){
     .intro{
@@ -307,6 +308,7 @@ main{
 
         
     }
+
 }
 
 .list{
@@ -915,6 +917,9 @@ height: 300px;
     }
     .actual-form1{
        width: 200px; 
+    }
+    .bg-color{
+        width: 100%;
     }
   }
 

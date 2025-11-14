@@ -36,8 +36,8 @@ smallScreenMenuIcons.addEventListener("click", function () {
 
 
 var images = [
-  "media/j-removebg-preview.png",
-  "media/ZES_8667_2-removebg-preview.png"
+ "media/grok_image_xfajzg2-3_2-removebg-preview.png",
+  "media/j-removebg-preview.png"
 ];
 var index = 0;
 
@@ -63,7 +63,7 @@ setInterval(function () {
     meImg.src = images[index];
 
     // ---- sizing logic ----
-    if (images[index] === "media/ZES_8667_2-removebg-preview.png") {
+    if (images[index] === "media/grok_image_xfajzg2-3_2-removebg-preview.png") {
       meImg.style.width = "100%";
       meImg.style.height = "143%";
     } else {
@@ -74,6 +74,6 @@ setInterval(function () {
     // fade in the new image
     meImg.classList.add("show");
 
-  }, 800); // wait for fade-out
+  }, 1000); // wait for fade-out
 
 }, 5000);
