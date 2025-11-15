@@ -36,6 +36,7 @@ smallScreenMenuIcons.addEventListener("click", function () {
 // My Image Animation
 
 
+
 var images = [
  "media/grok_image_xfajzg2-3_2-removebg-preview.png",
   "media/j-removebg-preview.png"
@@ -46,7 +47,7 @@ var index = 0;
 window.onload = function () {
   setTimeout(function () {
     meImg.classList.add("show");
-  }, 50); 
+  }, 1000); 
 };
 
 setInterval(function () {
@@ -81,4 +82,38 @@ setInterval(function () {
 
 // Name Animation
 
+// Texts to animate
+var texts = ["Jesujoba", "Jay-Bthedev"];
+var textIndex = 0;
 
+function animateText(text) {
+  // Clear existing content
+  myName.innerHTML = "";
+
+  // Split text into letters
+  text.split("").forEach(function(letter) {
+    var span = document.createElement("span");
+    span.textContent = letter;
+    myName.appendChild(span);
+  });
+
+  // Animate letters one by one
+  var spans = myName.querySelectorAll("span");
+  spans.forEach(function(span, i) {
+    setTimeout(function() {
+      span.classList.add("show");
+    }, i * 100); // adjust 100ms for speed between letters
+  });
+}
+
+// Initial animation
+animateText(texts[textIndex]);
+
+// Optional: swap text every few seconds
+setInterval(function() {
+  textIndex++;
+  if (textIndex >= texts.length) textIndex = 0;
+  animateText(texts[textIndex]);
+}, 5000); // change text every 5 seconds
+
+ 
