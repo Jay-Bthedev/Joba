@@ -7,6 +7,7 @@ var hamburgerIcon = document.querySelector(".ham");
 var closeIcon = document.querySelector(".close-icon");
 var smallScreenLinks = document.querySelector(".Side-bar-links");
 var meImg = document.getElementById("pic")
+var myName = document.getElementById("name")
 
 
 smallScreenLinks.addEventListener('click', function () {
@@ -77,3 +78,7 @@ setInterval(function () {
   }, 1000); // wait for fade-out
 
 }, 5000);
+
+// Name Animation
+
+
