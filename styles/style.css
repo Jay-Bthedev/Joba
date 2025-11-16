@@ -531,6 +531,9 @@ display: none;
 
     
 }
+.Features button p {
+    font-size: 6.8px;
+}
 .scroll-container{
     height: 50px;
 }
@@ -888,6 +891,9 @@ gap: 20px;
         padding-bottom: 20px;
       
     }
+     .Features button{
+        font-size: 7px;
+     }
     .form-div p{
         display: flex;
         flex-direction: column;
@@ -937,6 +943,7 @@ height: 300px;
        width: 330px; 
        object-fit: cover;
     }
+    
  }
   @media screen and (max-width: 800px){
     .About-des{
@@ -958,6 +965,7 @@ height: 300px;
     text-align: left;
     width: 100%;
       }
+     
   }
   @media screen and (max-width: 380px){
       .About-img{
@@ -996,6 +1004,12 @@ height: 300px;
     .form2 button{
         width: 80%;
     }
+     .Features button p {
+        font-size: 10px;
+      }
+       .Features button h3 {
+        font-size: 12px;
+      }
   }
 
 
